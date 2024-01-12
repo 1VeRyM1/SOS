@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS</title>
+    <link rel="stortcut icon" href="icons/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/fullpage.css">
+    <script src="js/fullpage.min.js"></script>
+</head>
+<body>
+    <main id="fullpage">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo"><img src="img/logo.png" alt="#"></a>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__li"><a class="header__menuelement lang-main" href="#">main</a></li>
+                            <li class="header__li"><a class="header__menuelement lang-about" href="#">about</a></li>
+                            <li class="header__li"><a class="header__menuelement lang-game" href="#">game features</a></li>
+                            <li class="header__li"><a class="header__menuelement lang-sysreq" href="#">system requirements</a></li>
+                            <li class="header__li"><a class="header__menuelement lang-quot" href="#">quotes</a></li>
+                        </ul>
+                    </nav>
+                    <select class="header__lang" name="lang" id="lang">
+                        <option class="header__option" value="ru">rus</option>
+                        <option class="header__option" value="eng">eng</option>
+                        <option class="header__option" value="ua">ua</option>
+                    </select>
+                    <div class="header__vr"></div>
+                    <div class="header__playgrounds">
+                        <a href="#" class="header__icons">
+                            <svg class="header__ico" width="30" height="30">
+                                <use href="icons/sprite.svg#xbox"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="header__icons">
+                            <svg class="header__ico" width="30" height="30">
+                                <use href="icons/sprite.svg#steam"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="header__butbur">
+                        <span class="header__butspan"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section promo" id="section1">
+            <div class="header__podl">
+                <nav class="header__menusec">
+                    <ul class="header__listsec">
+                        <li class="header__lisec"><a class="header__menuelement lang-mainss" href="#">main</a></li>
+                        <li class="header__lisec"><a class="header__menuelement lang-aboutss" href="#">about</a></li>
+                        <li class="header__lisec"><a class="header__menuelement lang-gamess" href="#">game features</a></li>
+                        <li class="header__lisec"><a class="header__menuelement lang-sysreqss" href="#">system requirements</a></li>
+                        <li class="header__lisec"><a class="header__menuelement lang-quotss" href="#">quotes</a></li>
+                    </ul>
+                </nav>
+                <div class="header__playgroundssec">
+                    <a href="#" class="header__iconssec">
+                        <svg class="header__ico" width="30" height="30">
+                            <use href="icons/sprite.svg#xbox"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header__iconssec">
+                        <svg class="header__ico" width="30" height="30">
+                            <use href="icons/sprite.svg#steam"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper mySwiper promo__swip">
+                <div class="swiper-wrapper promo__slides">
+                    <div class="swiper-slide promo__slid"><img src="img/bg/bg1.webp"></div>
+                    <div class="swiper-slide promo__slid"><img src="img/bg/bg2.webp"></div>
+                    <div class="swiper-slide promo__slid"><img src="img/bg/bg3.webp"></div>
+                    <div class="swiper-slide promo__slid"><img src="img/bg/bg4.webp"></div>
+                </div>
+                <div class="swiper-button-next promo__next"></div>
+                <div class="swiper-button-prev promo__prev"></div>
+                <div class="swiper-pagination promo__pagin"></div>
+            </div>
+            <div class="container">
+                <div class="promo__wrapper">
+                    <h1 class="title promo__title lang-title1">SURVIVE AT ALL COSTS</h1>
+                    <h2 class="subtitle promo__subtitle lang-subtitle1">Experience new social battle royale game</h2>
+                    <button class="button">
+                        <p class="buttext lang-buy">Buy now on Steam</p>
+                        <div class="promo__vr"></div>
+                        <p class="buttext promo__butprice">$14.99</p>
+                    </button>
+                    <a class="promo__down" id="dwn" href="#">
+                        <p class="lang-story">The story</p>
+                        <svg class="promo__ico" width="30" height="30">
+                            <use href="icons/sprite.svg#arrow"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <section class="section about" id="section2">
+            <div class="container">
+                <div class="about__wrapper">
+                    <div class="about__left">
+                        <h2 class="subtitle lang-subtitle2">What is SOS?</h2>
+                        <h1 class="title lang-title2">social battle royale game</h1>
+                        <div class="about__hr"></div>
+                        <div class="about__text lang-text1">Each round, <b>you</b> and <b>15</b> other contestants compete to
+                            escape a deadly island filled with monsters. The trick is: <b>three</b> people can survive. Will you run
+                            solo or form friendships with others to escape? 
+                            <br><br>
+                            Making the right decisions could be the
+                            difference between <span>life and death</span>.
+                        </div>
+                    </div>
+                    <div class="swiper sample-slider about__right">
+                        <div class="swiper-wrapper about__slides">
+                            <div class="swiper-slide about__slid"><img src="img/slider/slider1.webp"></div>
+                            <div class="swiper-slide about__slid"><img src="img/slider/slider2.webp"></div>
+                            <div class="swiper-slide about__slid"><img src="img/slider/slider3.webp"></div>
+                            <div class="swiper-slide about__slid"><img src="img/slider/slider4.webp"></div>
+                        </div>
+                        <div class="swiper-pagination about__points">
+                            <span class="swiper-pagination-bullet about__bullet"></span>
+                            <span class="swiper-pagination-bullet about__bullet"></span>
+                            <span class="swiper-pagination-bullet about__bullet"></span>
+                            <span class="swiper-pagination-bullet about__bullet"></span>
+                        </div>
+                        <div class="about__arrow-p">                      
+                            <svg class="about__ico" width="30" height="30">
+                                <use href="icons/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="about__arrow-l">
+                            <svg class="about__ico" width="30" height="30">
+                                <use href="icons/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section features" id="section3">
+            <div class="container">
+                <div class="features__wrapper">
+                    <h2 class="subtitle lang-subtitle3">What’s so special?</h2>
+                    <h1 class="title lang-title3">features</h1>
+                    <div class="features__accordion">
+                        <div class="features__element">
+                            <div class="features__title">
+                                <div class="features__rad" style="background-color: white;"></div>
+                                <div class="features__line"></div>
+                                <p class="features__minititle lang-mintit1">SURVIVE AT ALL COSTS</p> 
+                            </div>
+                            <div class="features__content lang-minut" style="max-height: 143px;">
+                                You have 30 minutes to find a relic, signal for extraction, and grab
+                                one of three spots on the rescue chopper.<br><br></div>
+                        </div>
+                        <div class="features__element">
+                            <div class="features__title">
+                                <div class="features__rad"></div>
+                                <div class="features__line"></div>
+                                <p class="features__minititle lang-mintit2">CREATE ALLIES AND ENEMIES</p> 
+                            </div>
+                            <div class="features__content lang-minut2">
+                                You have 30 minutes to find a relic, signal for extraction, and grab
+                                one of three spots on the rescue chopper.<br><br></div>
+                        </div>
+                        <div class="features__element">
+                            <div class="features__title" id="ggg">
+                                <div class="features__rad"></div>
+                                <div class="features__line"></div>
+                                <p class="features__minititle lang-mintit3">IMPRESS THE AUDIENCE</p> 
+                            </div>
+                            <div class="features__content lang-minut3">
+                                You have 30 minutes to find a relic, signal for extraction, and grab
+                                one of three spots on the rescue chopper.<br><br></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section system" id="section4">
+            <div class="container">
+                <div class="system__wrapper">
+                    <h2 class="subtitle subtitle-center lang-subtitle4">Can My Computer Run this game?</h2>
+                    <h1 class="title title-center lang-title4">system requirements</h1>
+                    <dl class="system__table">
+                        <div class="system__element">
+                            <dd class="system__title lang-os">OS:</dd>
+                            <dt class="system__text">Windows 7 64-bit only(No OSX support at this time)</dt>
+                        </div>
+                        <div class="system__element">
+                            <dd class="system__title lang-processor">PROCESSOR:</dd>
+                            <dt class="system__text">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</dt>
+                        </div>
+                        <div class="system__element">
+                            <dd class="system__title lang-memory">MEMORY:</dd>
+                            <dt class="system__text">8 GB RAM</dt>
+                        </div>
+                        <div class="system__element">
+                            <dd class="system__title lang-storage">storage:</dd>
+                            <dt class="system__text">8 GB available space</dt>
+                        </div>
+                        <div class="system__element" colspan="2">
+                            <dd class="system__title lang-graphics">GRAPHICS:</dd>
+                            <dt class="system__text">NVIDIA GeForce GTX 660 2GB or AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</dt>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section class="section quotes" id="section5">
+            <div class="container">
+                <div class="quotes__wrapper">
+                    <div class="quotes__right">
+                        <h2 class="subtitle lang-subtitle5">What people think?</h2>
+                        <h1 class="title lang-title5">Press quotes</h1>
+                        <div class="quotes__text lang-text2">Our goal is to create a product and service that you’re satisfied with and use it every day. 
+                            This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.
+                        </div>
+                        <button class="button lang-read">Read more testimonials</button>
+                    </div>
+                    <div class="quotes__left">
+                        <div class="quotes__plate">
+                            <div class="quotes__person">
+                                <div class="quotes__prof">
+                                    <img src="img/profil/prof1.webp" alt="profil">
+                                </div>
+                                <div class="quotes__name">Evan Lahti</div>
+                                <div class="quotes__employment">PC Gamer</div>
+                                <a class="quotes__twit" href="#">
+                                    <svg class="quotes__ico" width="30" height="30">
+                                        <use href="icons/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="quotes__comment lang-com1">“One of my gaming highlights of the year.”</div>
+                            <div class="quotes__date">October 18, 2018</div>
+                        </div>
+                        <div class="quotes__plate">
+                            <div class="quotes__person">
+                                <div class="quotes__prof">
+                                    <img src="img/profil/prof2.webp" alt="profil">
+                                </div>
+                                <div class="quotes__name">Jada Griffin</div>
+                                <div class="quotes__employment">Nerdreactor</div>
+                                <a class="quotes__twit" href="#">
+                                    <svg class="quotes__ico" width="30" height="30">
+                                        <use href="icons/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="quotes__comment lang-com2">“The next big thing in the world of streaming and survival games.”</div>
+                            <div class="quotes__date">December 21, 2018</div>
+                        </div>
+                        <div class="quotes__plate">
+                            <div class="quotes__person">
+                                <div class="quotes__prof">
+                                    <img src="img/profil/prof3.webp" alt="profil">
+                                </div>
+                                <div class="quotes__name">Aaron Williams</div>
+                                <div class="quotes__employment">Uproxx</div>
+                                <a class="quotes__twit" href="#">
+                                    <svg class="quotes__ico" width="30" height="30">
+                                        <use href="icons/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="quotes__comment lang-com3">“Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”</div>
+                            <div class="quotes__date">December 24, 2018</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section" id="section6" style="height: 100%; padding: 0; display: flex; flex-direction: column; justify-content: start;">
+            <section class=" subscribe">
+                <div class="container">
+                    <div class="subscribe__wrapper">
+                        <div class="subscribe__scull">
+                            <img src="img/skull.webp" alt="skull">
+                        </div>
+                        <div class="subscribe__osnova">
+                            <h2 class="subtitle lang-subtitle6">Want to stay in touch?</h2>
+                            <h1 class="title lang-title6">newsletter SUBSCRIBE </h1>
+                            <div class="subscribe__descr lang-text3">In order to start receiving our news, all you have to do is enter your email address.
+                                Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
+                            </div>
+                            <form class="subscribe__form" action="#">
+                                <label class="subscribe__plate" for="inp">
+                                    <span class="lang-emel">Your email address</span>
+                                    <input type="email" id="inp" name="inp" placeholder="aliciliniavopir@gmail.com" required>
+                                </label>
+                                <button class="button lang-subscribe">Subscribe now</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <div class="footer__top">
+                            <a class="footer__logo" href="#">
+                                <img src="img/logo.png" alt="logo">
+                            </a>
+                            <nav class="footer__menu">
+                                <ul class="footer__list">
+                                    <li class="footer__li"><a class="footer__menuelement lang-main2" href="#">main</a></li>
+                                    <li class="footer__li"><a class="footer__menuelement lang-about2" href="#">about</a></li>
+                                    <li class="footer__li"><a class="footer__menuelement lang-game2" href="#">game features</a></li>
+                                    <li class="footer__li"><a class="footer__menuelement lang-sysreq2" href="#">system requirements</a></li>
+                                    <li class="footer__li"><a class="footer__menuelement lang-quot2" href="#">quotes</a></li>
+                                </ul>
+                            </nav>
+                            <div class="footer__social">
+                                <a href="#" class="footer__icons">
+                                    <svg class="footer__ico" width="30" height="30">
+                                        <use href="icons/sprite.svg#facebook"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__icons">
+                                    <svg class="footer__ico" width="30" height="30">
+                                        <use href="icons/sprite.svg#twitter"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__icons">
+                                    <svg class="footer__ico" width="30" height="30">
+                                        <use href="icons/sprite.svg#youtube"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="footer__icons">
+                                    <svg class="footer__ico" width="30" height="30">
+                                        <use href="icons/sprite.svg#twitch"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer__hr"></div>
+                        <div class="footer__down">
+                            <small class="footer__copyright lang-copyr">
+                                © 2018 Outpost Games, Inc. All Rights Reserved
+                            </small>
+                            <ul class="footer__documents">
+                                <li class="footer__docel">
+                                    <a href="#" class="footer__doc lang-policy">Privacy Policy</a>
+                                </li>
+                                <li class="footer__docel">
+                                    <a href="#" class="footer__doc lang-services">Terms of Services</a>
+                                </li>
+                                <li class="footer__docel">
+                                    <a href="#" class="footer__doc lang-conduct">Code of Conduct</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
